@@ -1,0 +1,82 @@
+:root {
+  --custom-blue: #cde9ff;
+  --custom-grey: #fecce5;
+  --custom-yellow: #fff3ab;
+  --custom-green: #ccf1c5;
+}
+
+.note {
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+}
+
+.note_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note_header h1 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1; 
+}
+
+.pin {
+  cursor: pointer;
+  font-size: 30px;
+  flex-shrink: 0; 
+}
+
+.pin:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.edit,
+.delete {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.edit:hover, .delete:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.2);
+}
+
+.note h1,
+.note p {
+  margin-top: 8px;
+}
+
+.note h3 {
+  margin: 0;
+}
+
+.n1 {
+  background-color: var(--custom-grey);
+}
+
+.n2 {
+  background-color: var(--custom-yellow);
+}
+
+.n3 {
+  background-color: var(--custom-green);
+}
+
+.n4 {
+  background-color: var(--custom-blue);
+}

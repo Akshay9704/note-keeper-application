@@ -1,0 +1,90 @@
+.notes_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto 5px auto; 
+}
+
+.add_note_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.add_note {
+  width: 150px;
+  padding: 10px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.add_note:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+  background-color: #f1356d;
+  color: white;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination_container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Mobile Devices: */
+@media only screen and (max-width: 768px) {
+  .notes_container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    justify-items: center;
+  }
+
+  .note {
+    max-width: 300px;
+    padding: 18px;
+  }
+
+  .note_header h1 {
+    font-size: 1.3em;
+  }
+
+  .pin {
+    font-size: 28px;
+  }
+
+  .edit, .delete {
+    font-size: 28px;
+  }
+
+  .pagination_container {
+    position: relative;
+  }
+  
+}
+
+/* For Tablets: */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .notes_container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-template-rows: auto;
+  }
+  .pagination_container {
+    position: relative;
+  }
+}
