@@ -38,7 +38,7 @@
 }
 
 .pagination_container {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding: 20px 0;
@@ -70,10 +70,6 @@
   .edit, .delete {
     font-size: 28px;
   }
-
-  .pagination_container {
-    position: relative;
-  }
   
 }
 
@@ -83,8 +79,5 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-template-rows: auto;
-  }
-  .pagination_container {
-    position: relative;
   }
 }
